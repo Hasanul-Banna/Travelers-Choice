@@ -106,6 +106,13 @@ header span b {
     background-attachment: fixed;
     user-select: none;
 }
+.pkcard{
+    width: 250px;
+    border-radius: 10px;
+}
+.pkcard img:first-child {
+    border-radius: 10px;
+}
 
 #about {
     font-family: 'Barlow Condensed', sans-serif ;
