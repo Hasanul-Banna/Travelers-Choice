@@ -56,18 +56,18 @@ var mixer = mixitup(config);
 
 $('.respon').slick({
   dots: true,
-  arrows: false,
+  arrows: true,
   infinite: false,
   speed: 300,
   slidesToShow: 3,
-  slidesToScroll: 3,
+  slidesToScroll: 1,
   responsive: [
     {
       breakpoint: 1024,
       settings: {
          arrows: false,
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
@@ -77,7 +77,54 @@ $('.respon').slick({
       settings: {
         arrows: false,
         slidesToShow: 2,
-        slidesToScroll: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+         arrows: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
+});
+
+
+$('.gallery').slick({
+  dots: true,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  arrows: true,
+  infinite: true,
+  speed: 500,
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+         arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        infinite: true,
+        dots: true
+      }
+    },
+    {
+      breakpoint: 768,
+      settings: {
+        arrows: false,
+        slidesToShow: 2,
+        slidesToScroll: 1,
         infinite: true,
         dots: true
       }
