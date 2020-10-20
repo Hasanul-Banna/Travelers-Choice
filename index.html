@@ -10,9 +10,21 @@
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+    integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+    crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
+    integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+    crossorigin="anonymous" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
   <link rel="stylesheet" href="./style.css">
+
   <link rel="stylesheet" href="./jquery.animatedheadline.css">
+
 </head>
 
 <body>
@@ -86,7 +98,7 @@
   </header>
 
   <section class="pt-5 ">
-    <p class="text-center">Search Our Upcoming Trips On Your Desired Date.</p>
+    <p class="text-center">Click The Calender Icon To Pick Your Desired Date</p>
     <div class="d-flex justify-content-center">
       <input class="form-control w-50 w-md-75 " type="date" name="" id="">&nbsp;<button
         class="btn btn-info">Search</button>
@@ -173,13 +185,16 @@
 
 
 
-        
+
 
 
       </div>
     </div>
   </section>
 
+  <section>
+    <div class="calender"></div>
+  </section>
 
   <section id="places" class="container pt-5 pb-5 text-center">
     <h2>Top Places</h2>
@@ -194,8 +209,8 @@
     <button class="btn btn-info mb-2" data-filter=".Nepal">Nepal</button>
     <br><br>
 
-    <div class="places d-flex flex-wrap justify-content-around">
-      <div class="mix Bangladesh ">
+    <div class="places  respon">
+      <div class="mix  Bangladesh ">
         <div style="position: relative">
           <img src="./images/cox's bazar.jpg" alt="">
           <p class="BDT">BDT 12000/-</p>
@@ -207,14 +222,12 @@
         <!-- Modal HTML embedded directly into document -->
         <a href="#ex1" rel="modal:open" class="btn btn-brand">Read More</a>
         <div id="ex1" class="modal">
-          <img class="w-100" src="./images/cox's bazar.jpg" alt="">
           <h3>Cox's Bazar</h3>
-          <p>
-          </p>
+
         </div>
         <!-- Link to open the modal -->
       </div>
-      <div class="mix India">
+      <div class="mix  India">
         <div class="position-relative">
           <img src="./images/darjeeling.jpg" alt="">
           <p class="BDT">BDT 12000/-</p>
@@ -226,15 +239,11 @@
         <!-- Modal HTML embedded directly into document -->
         <a href="#ex2" rel="modal:open" class="btn btn-brand">Read More</a>
         <div id="ex2" class="modal">
-          <img class="w-100" src="./images/darjeeling.jpg" alt="">
           <h3>Darjeeling</h3>
-          <p>
-          </p>
-
         </div>
         <!-- Link to open the modal -->
       </div>
-      <div class="mix Indonesia">
+      <div class="mix  Indonesia">
         <div class="position-relative">
           <img src="./images/baali.jpeg" alt="">
           <p class="BDT">BDT 12000/-</p>
@@ -246,15 +255,11 @@
         <!-- Modal HTML embedded directly into document -->
         <a href="#ex3" rel="modal:open" class="btn btn-brand">Read More</a>
         <div id="ex3" class="modal">
-          <img class="w-100" src="./images/baali.jpeg" alt="">
           <h3>Bali</h3>
-          <p>
-          </p>
-
         </div>
         <!-- Link to open the modal -->
       </div>
-      <div class="mix Thailand">
+      <div class="mix  Thailand">
         <div class="position-relative">
           <img src="./images/pataya.jpg" alt="">
           <p class="BDT">BDT 12000/-</p>
@@ -265,15 +270,11 @@
         <!-- Modal HTML embedded directly into document -->
         <a href="#ex4" rel="modal:open" class="btn btn-brand">Read More</a>
         <div id="ex4" class="modal">
-          <img class="w-100" src="./images/pataya.jpg" alt="">
           <h3>Pataya</h3>
-          <p>
-          </p>
-
         </div>
         <!-- Link to open the modal -->
       </div>
-      <div class="mix Malaysia">
+      <div class="mix  Malaysia">
         <div class="position-relative">
           <img src="./images/kualalampur.jpg" alt="">
           <p class="BDT">BDT 12000/-</p>
@@ -285,15 +286,11 @@
         <!-- Modal HTML embedded directly into document -->
         <a href="#ex5" rel="modal:open" class="btn btn-brand">Read More</a>
         <div id="ex5" class="modal">
-          <img class="w-100" src="./images/kualalampur.jpg" alt="">
           <h3>kualalampur</h3>
-          <p>
-          </p>
-
         </div>
         <!-- Link to open the modal -->
       </div>
-      <div class="mix Indonesia">
+      <div class="mix  Indonesia">
         <div class="position-relative">
           <img src="./images/baali.jpeg" alt="">
           <p class="BDT">BDT 12000/-</p>
@@ -304,15 +301,11 @@
         <!-- Modal HTML embedded directly into document -->
         <a href="#ex6" rel="modal:open" class="btn btn-brand">Read More</a>
         <div id="ex6" class="modal">
-          <img class="w-100" src="./images/baali.jpeg" alt="">
           <h3>Bali</h3>
-          <p>
-          </p>
-
         </div>
         <!-- Link to open the modal -->
       </div>
-      <div class="mix Nepal">
+      <div class="mix  Nepal">
         <div class="position-relative">
           <img src="./images/Pokhara.jpg" alt="">
           <p class="BDT">BDT 12000/-</p>
@@ -325,13 +318,26 @@
         <!-- Modal HTML embedded directly into document -->
         <a href="#ex7" rel="modal:open" class="btn btn-brand">Read More</a>
         <div id="ex7" class="modal">
-          <img class="w-100" src="./images/Pokhara.jpg" alt="">
           <h3>Pokhara</h3>
-          <p>
-          </p>
-
         </div>
         <!-- Link to open the modal -->
+      </div>
+    </div>
+  </section>
+
+
+  <section>
+    <div class="container pt-5 pb-5 ">
+      <h2 class="text-center">Tour Gallary</h2> <br>
+      <div class="respon">
+        <img style="width: 250px; height: 200px; margin: 20px; border-radius:10px;" src="./images/ratargul.jpg" alt="">
+        <img style="width: 250px; height: 200px; margin: 20px; border-radius:10px;" src="./images/ratargul.jpg" alt="">
+        <img style="width: 250px; height: 200px; margin: 20px; border-radius:10px;" src="./images/ratargul.jpg" alt="">
+        <img style="width: 250px; height: 200px; margin: 20px; border-radius:10px;" src="./images/ratargul.jpg" alt="">
+        <img style="width: 250px; height: 200px; margin: 20px; border-radius:10px;" src="./images/ratargul.jpg" alt="">
+        <img style="width: 250px; height: 200px; margin: 20px; border-radius:10px;" src="./images/ratargul.jpg" alt="">
+        <img style="width: 250px; height: 200px; margin: 20px; border-radius:10px;" src="./images/ratargul.jpg" alt="">
+        <img style="width: 250px; height: 200px; margin: 20px; border-radius:10px;" src="./images/ratargul.jpg" alt="">
       </div>
     </div>
   </section>
@@ -479,14 +485,23 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
     crossorigin="anonymous"></script>
+
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3h36lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
+
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"></script>
+
   <script src="./mixitup.min.js"></script>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+
   <script src="./jquery.animatedheadline.min.js"></script>
   <script src="main.js"></script>
 </body>
