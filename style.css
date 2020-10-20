@@ -73,14 +73,14 @@ header span b {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
 }
-.mix{
-    width:250px;
-    border: 1px solid lightgray;
-    border-radius: 10px;
-    margin-bottom: 20px;
 
-    
+
+.mix{
+    border: 1px solid lightgray;
+    border-radius: 10px; 
+    margin:25px;  
 }
+
 .places .mix img{
     width: 100%;
     height: 180px;
@@ -96,7 +96,7 @@ header span b {
     background-color: crimson;
     color: white;
     padding: 2px 5px;
-    margin-left: -7px;
+    /* margin-left: -7px; */
 }
 
 #packages{
@@ -113,6 +113,7 @@ header span b {
 .pkcard img:first-child {
     border-radius: 10px;
 }
+
 
 #about {
     font-family: 'Barlow Condensed', sans-serif ;
@@ -189,6 +190,7 @@ footer{
      margin-bottom: 15px; 
      border-radius: 5px;
 }
+
   @media screen and (max-height: 450px) {
     .overlay a {font-size: 20px}
     .overlay .closebtn {
@@ -216,7 +218,7 @@ footer{
 }
 
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1024px) {
     header {
         font-size: 16px;
     }
@@ -226,6 +228,10 @@ footer{
     #bio h2 {
         text-align: center;
     }
+    .mix{
+         margin:40px;  
+    }
+    
 
  
 }
@@ -241,4 +247,8 @@ footer{
     footer .col-md-4{
         margin-bottom: 30px;
     }
+    .mix{
+        margin:10px;  
+   }
+
 }
