@@ -7,9 +7,7 @@
     box-sizing: border-box;
     scroll-behavior: smooth !important;
 }
-body{
-    background: #272727;
-}
+
 
 .btn-brand-main{
     background: transparent;
