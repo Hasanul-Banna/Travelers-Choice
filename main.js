@@ -1,3 +1,10 @@
+$(document).ready(function() {	
+	setTimeout(function(){
+		$('body').addClass('loaded');
+	}, 2000);
+
+});
+
 $(function () {
   // $('.animate-rotate-1').animatedHeadline({
   //     animationType: 'rotate-1'
@@ -144,3 +151,7 @@ $('.gallery').slick({
     // instead of a settings object
   ]
 });
+
+
+
+
